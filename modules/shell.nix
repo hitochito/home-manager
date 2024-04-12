@@ -17,14 +17,23 @@
     EDITOR = "nvim";
   };
 
-  programs.nushell = {
+
+  programs.zsh = {
     enable = true;
-    envFile.source = configs/nushell/env.nu;
-    configFile.source = configs/nushell/config.nu;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
+    envExtra = '' '';
+    initExtra = ''
+    #KEYBINDS
+    #bindkey -L TO LIST ALL KEYBINDS
+    bindkey '^F' autosuggest-accept #ACCEPT GIVEN SUGGESTION
+    '';
   };
   programs.starship = {
     enable = true;
-    enableNushellIntegration = true;
+    enableZshIntegration = true;
     settings = pkgs.lib.importTOML configs/starship/starship.toml;
   };
 }
