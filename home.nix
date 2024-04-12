@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    modules/shell.nix
+  ];
+
   #DO NOT CHANGE ANYTHING BELOW.
   home.username = "hitochito";
   home.stateVersion = "23.11";
