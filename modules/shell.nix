@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  home.packages = [
+    fd #LAZVIM DEPENDENCY
+    ripgrep #LAZYVIM DEPENDENCY
+    nushell
+  ];
+
   programs.gh.enable = true;
   programs.git.enable = true;
   programs.lazygit.enable = true;
@@ -12,11 +18,11 @@
     EDITOR = "nvim";
   };
 
-  programs.nushell = {
-    enable = true;
-    envFile.source = configs/nushell/env.nu;
-    configFile.source = configs/nushell/config.nu;
-  };
+  #programs.nushell = {
+  #  enable = true;
+  #  envFile.source = configs/nushell/env.nu;
+  #  configFile.source = configs/nushell/config.nu;
+  #};
   programs.starship = {
     enable = true;
     enableNushellIntegration = true;
