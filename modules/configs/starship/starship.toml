@@ -126,7 +126,6 @@ symbol = "ml "
 symbol = "opa "
 
 [os.symbols]
-AIX = "aix "
 Alpaquita = "alq "
 AlmaLinux = "alma "
 Alpine = "alp "
