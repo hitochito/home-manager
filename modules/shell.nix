@@ -11,4 +11,13 @@
   home.sessionVariables = {
     EDITOR = "nvim";
   };
+
+  programs.nushell = {
+    enable = true;
+  };
+  programs.starship = {
+    enable = true;
+    enableNushellIntegration = true;
+    settings = pkgs.lib.importTOML configs/starship/starship.toml;
+  };
 }
