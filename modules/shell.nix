@@ -14,6 +14,8 @@
 
   programs.nushell = {
     enable = true;
+    envFile.source = modules/configs/nushell/env.nu;
+    configFile.source = modules/configs/nushell/config.nu;
   };
   programs.starship = {
     enable = true;
