@@ -2,9 +2,9 @@
 
 {
   home.packages = [
-    fd #LAZVIM DEPENDENCY
-    ripgrep #LAZYVIM DEPENDENCY
-    nushell
+    pkgs.fd #LAZVIM DEPENDENCY
+    pkgs.ripgrep #LAZYVIM DEPENDENCY
+    pkgs.nushell
   ];
 
   programs.gh.enable = true;
