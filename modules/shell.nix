@@ -3,6 +3,8 @@
 {
   home.packages = [
     pkgs.fd #LAZVIM DEPENDENCY
+    pkgs.ffmpeg #VIDEO_CONVERTER
+    pkgs.yt-dlp #VIDEO_DOWNLOADER
     pkgs.ripgrep #LAZYVIM DEPENDENCY
     pkgs.devbox #NIX-POWERED DEV ENVIRONMENT
     pkgs.neofetch #FETCH STATUS OF THE SYSTEM
