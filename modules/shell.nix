@@ -6,6 +6,7 @@
     pkgs.ffmpeg #VIDEO_CONVERTER
     pkgs.yt-dlp #VIDEO_DOWNLOADER
     pkgs.ripgrep #LAZYVIM DEPENDENCY
+    pkgs.unzip #LAZYVIM DEPENDENCY
     pkgs.devbox #NIX-POWERED DEV ENVIRONMENT
     pkgs.neofetch #FETCH STATUS OF THE SYSTEM
   ];
