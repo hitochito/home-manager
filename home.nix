@@ -6,8 +6,8 @@
   ];
 
   #DO NOT CHANGE ANYTHING BELOW.
+  home.stateVersion = "24.05";
   home.username = "hitochito";
-  home.stateVersion = "23.11";
   programs.home-manager.enable = true;
   home.homeDirectory = "/home/hitochito";
 }

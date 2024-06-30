@@ -2,13 +2,7 @@
 
 {
   home.packages = [
-    pkgs.fd #LAZVIM DEPENDENCY
-    pkgs.ffmpeg #VIDEO_CONVERTER
-    pkgs.yt-dlp #VIDEO_DOWNLOADER
-    pkgs.ripgrep #LAZYVIM DEPENDENCY
-    pkgs.unzip #LAZYVIM DEPENDENCY
     pkgs.devbox #NIX-POWERED DEV ENVIRONMENT
-    pkgs.neofetch #FETCH STATUS OF THE SYSTEM
   ];
 
   programs.git = {
@@ -30,20 +24,16 @@
     };
   };
   programs.gh.enable = true;
-  programs.lazygit.enable = true;
-  programs.neovim.enable = true;
-  home.sessionVariables = {
-    EDITOR = "nvim";
+
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
   };
 
-  programs.nushell = {
-    enable = true;
-    envFile.source = configs/nushell/env.nu;
-    configFile.source = configs/nushell/config.nu;
-  };
   programs.starship = {
     enable = true;
-    enableNushellIntegration = true;
+    enableZshIntegration = true;
     settings = pkgs.lib.importTOML configs/starship/starship.toml;
   };
 }
