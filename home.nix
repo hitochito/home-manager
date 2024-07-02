@@ -10,4 +10,8 @@
   home.username = "hitochito";
   programs.home-manager.enable = true;
   home.homeDirectory = "/home/hitochito";
+programs.neovim.enable = true;
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 }
