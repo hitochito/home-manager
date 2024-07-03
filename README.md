@@ -1,9 +1,12 @@
 # HOW TO GET STARTED
 ```
+sudo apt install build-essential
+
 sh <(curl -L https://nixos.org/nix/install) --daemon
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+
 nix-channel --update
 nix-shell '<home-manager>' -A install
 
@@ -19,5 +22,7 @@ home-manager switch
 
 # Post-Install Issues
 ## OPEN ZSH BY DEFAULT By Adding These Lines In `.bashrc`
+```
 export SHELL=$(which zsh)
 [ -f "$SHELL" ] && exec "$SHELL" -l
+```
