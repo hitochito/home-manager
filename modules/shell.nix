@@ -3,6 +3,9 @@
 {
   home.packages = [
     pkgs.devbox #NIX-POWERED DEV ENVIRONMENT
+    pkgs.unzip #LAZYVIM
+    pkgs.ripgrep #LAZYVIM
+    pkgs.nodejs_22 #LAZYVIM
   ];
 
   programs.git = {
@@ -29,6 +32,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
+    autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
   };
 
