@@ -36,19 +36,18 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-      history = {
+    history = {
       size = 10000;
       ignoreDups = true;
       share = true;
       save = 10000;
       extended = true;
+    };
 
-      # Optional: Add some useful options
     initExtra = ''
       setopt HIST_REDUCE_BLANKS
       bindkey '^F' autosuggest-accept
     '';
-    };
   };
 
   programs.starship = {
