@@ -6,6 +6,7 @@
     pkgs.unzip #LAZYVIM
     pkgs.ripgrep #LAZYVIM
     pkgs.nodejs_22 #LAZYVIM
+    pkgs.stylua #LAZYVIM
   ];
 
   programs.git = {
