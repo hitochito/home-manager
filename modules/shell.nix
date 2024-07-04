@@ -5,7 +5,7 @@
     pkgs.devbox #NIX-POWERED DEV ENVIRONMENT
     pkgs.unzip #LAZYVIM
     pkgs.ripgrep #LAZYVIM
-    pkgs.nodejs_23 #LAZYVIM
+    pkgs.nodejs_22 #LAZYVIM
     pkgs.nodePackages.pnpm #DEVELOPMENT
     pkgs.stylua #LAZYVIM
   ];
