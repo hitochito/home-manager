@@ -1,6 +1,6 @@
 # HOW TO GET STARTED
 ```
-sudo apt install build-essential
+sudo apt install nala build-essential
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
 nix-channel --add https://nixos.org/channels/nixos-unstable nixos
