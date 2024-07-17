@@ -3,12 +3,12 @@
 sudo apt install nala build-essential
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
-nix-channel --add https://nixos.org/channels/nixos-unstable nixos
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
+sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 
-nix-channel --update
-nix-shell '<home-manager>' -A install
+sudo nix-channel --update
+sudo nix-shell '<home-manager>' -A install
 
 cd .config
 rm -rf home-manager
